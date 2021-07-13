@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-section {
+    padding: 5rem 0em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+}
+
+.background-img-left {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: 0 0 270px 270px;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    transform: translate(-50%, -30%);
+    max-width: 400px;
+}
+
+.background-img-right {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 270px 270px 0 0;
+    background: linear-gradient(to bottom, #f7f5fa, #f9f4fa);
+    transform: translateX(50%);
+    max-width: 400px;
+}
+
+
+#phone-body{
+    position: relative;
+    background-color: white;
+   
+    width: 247px;
+    height: 507px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0.4px 1.6px rgba(0, 0, 0, 0.017), 0 0.9px 3.6px rgba(0, 0, 0, 0.024),
+        0 1.6px 6.3px rgba(0, 0, 0, 0.03), 0 2.5px 10px rgba(0, 0, 0, 0.035),
+        0 3.9px 15.5px rgba(0, 0, 0, 0.04), 0 6px 24.1px rgba(0, 0, 0, 0.046),
+        0 10px 40px rgba(0, 0, 0, 0.053), 0 20px 80px rgba(0, 0, 0, 0.07);
+    box-sizing: border-box;
+}
+
+
+#phone-inner{
+    background-color:hsl(270, 20%, 96%);
+    width: 227px;
+    height: 484px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+#notch{
+    background-color:white;
+    width: 129px;
+    height: 18px;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+}
+#background{
+    height: 66px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(to right,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+   
+}
+#header-details-main{
+    /* background-color: black; */
+    height: 48px;
+    
+    
+}
+.header-details{
+    float: left;
+    margin-top: 9px;
+    margin-right: 8px;
+   
+    /* background-color: yellow; */
+    
+}
+#back-button{
+    border: none;
+    outline: none;
+    font-size: 11px;
+    font-family: 'Nanum Gothic', sans-serif;;
+    margin-left: 15px;
+    font-weight: 700;
+    margin-top: 8px;
+    color: white;
+    background: transparent;
+}
+#profile-pic{
+    width: 22px;
+    height: 22px;
+    background: url("../images/avatar.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border:1px solid white;
+    margin-top: 13px;
+    
+}
+
+#more-button-div{
+    float: right;
+}
+#more-button{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    outline: none;
+    color:white;
+    transform: rotate(90deg);
+}
+#name-status{
+    width: 120px;
+    font-size: 7px;
+    margin-top: 15px;
+  
+    color: hsl(276, 100%, 81%);
+}
+#name-status h1{
+    font-size: 10px;
+    margin-bottom: -4px;
+    font-weight: normal;
+    color: white;
+    
+}
+.chatbox{
+    height: 34px;
+    width: 128px;
+    background-color: #EDE5F4;
+    color: hsl(276, 55%, 52%);
+    margin: 10px 0 8px 8px;
+    font-size: 8px;
+    padding: 8px;
+    border-radius: 10px 10px 10px 3px;
+    box-sizing: border-box;
+}
+#chat2{
+    margin-top: 0px;
+}
+
+#dogimg{
+    float: right;
+    margin-right: 8px;
+    margin-top: 16px;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+
+}
+
+#chat3{
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 10px 10px 3px 10px;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+}
+#chat4{
+    height: 24px;
+    width: 80px;
+    background-color: white;
+    margin: 0 8px 16px 0;
+    font-size: 8px;
+    padding: 8px;
+    color: hsl(271, 15%, 43%);
+    border-radius: 10px 10px 3px 10px;
+    float: right;
+    box-sizing: border-box;
+}
+#chat5{
+    float: left;
+    margin-top: 35px;
+    height: 45px;
+    padding-right: 9px;
+}
+.price-section{
+    float: left;
+    height: 32px;
+    width: 160px;
+    background: linear-gradient(to right , hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    margin-left: 8px;
+    border-radius: 10px 10px 10px 3px;
+    padding: 8px;
+    padding-right: 16px;
+    font-size: 9px;
+    color: hsl(276, 100%, 81%);
+    box-sizing: border-box;
+    display: flex;
+    
+    align-items: center;
+}
+#price-section-1{
+    margin-bottom: 8px;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid hsl(276, 100%, 81%);
+    float: left;
+    margin-right: 8px;
+}
+.price{
+    width: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+}
+#price2{
+    width: 64px;
+}
+#price-section-2{
+    margin-bottom: 13px;
+}
+
+#main-input-box{
+width: 213px;
+height: 34px;
+margin: auto;
+margin-left: 8px;
+
+background: white;
+display: flex;
+align-items: center;
+border-radius: 34px;
+}
+#input-text{
+border: none;
+outline:none;
+
+}
+#input-box ::placeholder{
+    font-size: 8px;
+color:hsl(206, 6%, 79%);
+}
+#input-box{
+margin-left: 20px;
+float: left;
+}
+#submit-button{
+height: 22px;
+width: 22px;
+border: 1px solid black;
+border-radius: 100%;
+font-size: 14px;
+font-weight: bold;
+font-family: 'Poppins', sans-serif;
+color: white;
+background:hsl(271, 36%, 24%);
+
+outline:none;
+}
+
+.right-section {
+    padding: 5rem 2rem 6rem;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.description-text h1 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.description-text p {
+    font-size: 1rem;
+    color: hsl(270, 7%, 64%);
+    line-height: 1.6;
+    margin: auto;
+    max-width: 45ch;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 4px;
+    font-size: 11px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 1250px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+    }
+
+    
+
+    .background-img-left {
+        max-width: 540px;
+        height: 125%;
+        transform: translate(-18%, -30%);
+    }
+
+    .background-img-right {
+        max-width: 540px;
+        height: 85%;
+        transform: translateX(35%);
+    }
+
+    .left-section {
+        padding-bottom: 5rem;
+        flex: 1 1 50%;
+        justify-content: center;
+    }
+
+    .phone {
+        transform: translateX(50%);
+    }
+
+    .right-section {
+        flex: 1 1 50%;
+        text-align: left;
+    }
+
+    .description-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .description-text p {
+        margin-left: 0;
+    }
+}
+
+@keyframes top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
